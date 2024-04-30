@@ -17,5 +17,5 @@ if __name__ == '__main__':
     while True:
         registered_user = get_registered_user()
         print(registered_user)
-        producer.send('report1', registered_user)
+        producer.send('report', registered_user)
         time.sleep(20)
